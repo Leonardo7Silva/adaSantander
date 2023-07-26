@@ -19,7 +19,7 @@ public class A06EX01 {
 
     public static double valorProdutoFinal(double valorProduto, String estado) {
         for (Estado t : Estado.values()){
-            if(t.getNome() == estado){
+            if(t.getNome().equals(estado)){
                 return arredondar(t.getDesconto()*valorProduto +valorProduto);
             }
         }
