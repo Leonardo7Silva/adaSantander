@@ -7,6 +7,10 @@ public class A07EX02 {
         System.out.println(multiplicar(4));
         System.out.println(multiplicar2(10));
 
+        String a = "AAA";
+        String.valueOf(a.charAt(0));
+        System.out.println(String.valueOf(a.charAt(0)));
+
     }
 
     public static int somar(int limite){
@@ -39,5 +43,15 @@ public class A07EX02 {
             return 1;
         }
         return limite * multiplicar2( limite -1);
+    }
+
+    public static char[] soletrandoStr(String input) {
+        char[] aux = new char[input.length()];
+
+        for(int i = 0; i < input.length(); i++){
+            aux[i] = input.charAt(i);
+        }
+
+        return aux;
     }
 }
